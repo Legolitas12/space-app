@@ -61,14 +61,17 @@ const App = () => {
       <FondoGradiente>
         <GlobalStyles />
         <AppContainer>
-          <Cabecera setConsulta={setConsulta}/>
+          <Cabecera setConsulta={setConsulta} textoConsulta={consulta}/>
           <MainContainer>
             <BarraLateral />
             <ContenidoGaleria>
               
               <Banner texto="La galería más completa de fotos del espacio" backgroundImage={banner} />
 
-              <Galeria alSeleccionarFoto={foto => setFotoSeleccionada(foto)} fotos={fotosDeGaleria} alAlternarFavorito={alAlternarFavorito} />
+              <Galeria alSeleccionarFoto={(foto) => setFotoSeleccionada(foto)} 
+              fotos={fotosDeGaleria} 
+              alAlternarFavorito={alAlternarFavorito} 
+              consulta={consulta}  />
             </ContenidoGaleria>
           </MainContainer>
         </AppContainer>
