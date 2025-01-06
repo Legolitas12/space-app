@@ -47,7 +47,7 @@ function Pie() {
                 	</a>
             	</li>
         	</IconoContainer>
-        	<PieTexto>Desarrollado por Samuel Patiño con Ayuda de Alura.</PieTexto>
+        	<PieTexto>Desarrollado por Samuel Alejandro Patiño con Ayuda de Alura.</PieTexto>
     	</PieEstilizado>
 	);
 }

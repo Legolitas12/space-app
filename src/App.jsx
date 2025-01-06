@@ -32,6 +32,8 @@ const ContenidoGaleria = styled.section`
 
 
 const App = () => {
+
+  const [consulta, setConsulta] = useState('')
   const [fotosDeGaleria, setFotosDeGaleria] = useState(fotos)
   const [fotoSeleccionada, setFotoSeleccionada] = useState(null)
 
@@ -59,10 +61,11 @@ const App = () => {
       <FondoGradiente>
         <GlobalStyles />
         <AppContainer>
-          <Cabecera />
+          <Cabecera setConsulta={setConsulta}/>
           <MainContainer>
             <BarraLateral />
             <ContenidoGaleria>
+              
               <Banner texto="La galería más completa de fotos del espacio" backgroundImage={banner} />
 
               <Galeria alSeleccionarFoto={foto => setFotoSeleccionada(foto)} fotos={fotosDeGaleria} alAlternarFavorito={alAlternarFavorito} />
