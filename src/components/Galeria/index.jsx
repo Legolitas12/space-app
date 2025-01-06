@@ -22,6 +22,7 @@ const ImagenesContainer = styled.section`
 
 const Galeria = ({ fotos = [], alSeleccionarFoto,alAlternarFavorito, consulta }) => {
 
+    console.log('Creando el componente de la galeria');
     return (
         <>
             <Tag />

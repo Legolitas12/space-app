@@ -6,7 +6,7 @@ import Banner from "./components/Banner"
 import banner from "./assets/banner.png"
 import Galeria from "./components/Galeria"
 import fotos from "./fotos.json"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ModalZoom from "./components/ModalZoom"
 import Pie from "./components/Pie"
 
@@ -54,6 +54,15 @@ const App = () => {
       }
     }))
   }
+
+  useEffect(() => {
+    console.log('Creando el componente de la aplicacion');
+  
+   
+  })
+  
+
+
 
 
   return (
